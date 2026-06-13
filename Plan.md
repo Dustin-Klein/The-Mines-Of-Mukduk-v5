@@ -46,6 +46,7 @@ Decision: real-time action combat. It's the "A" in ARPG, plays to s&box's (Sourc
 - **Crafting / forge stations:** turn ore + scrap into upgraded gear; forges double as semi-safe checkpoints.
 - **Light & resource scarcity:** torches / lantern oil as consumables — darkness = danger.
 - **Escalating threat:** the longer you linger on a tier, the worse it gets (stronger spawns / rising hazard) — pushes the escape.
+- **Siege encounters (action tower-defense — _prototype later, NOT in MVP_):** a PvZ-flavored dynamic adapted to the ARPG. Tunnels act as lanes; you **spend mined ore/scrap to place jury-rigged defenses** (spike walls, oil-fire braziers, salvaged turrets, traps) in chokepoints, *and* keep fighting as a mobile character — the **Dungeon Defenders / Orcs Must Die!** hybrid, **not** literal stationary PvZ. Use sparingly as a climax beat: **~1 siege per tier**, justified diegetically (hold the lift while it powers up, defend the forge mid-upgrade, survive until a fissure charge detonates). Strengthens existing pillars: gives mined ore a second use and makes forges/lifts tense instead of safe. **Risk:** keep it occasional — if every room is a wave, it stops being an ARPG.
 - **Win condition:** reach the final exit at the bottom of the mine.
 - **Lose condition:** death — see Run Model below.
 
@@ -95,6 +96,7 @@ Decision: real-time action combat. It's the "A" in ARPG, plays to s&box's (Sourc
   - Tier 3 — The deep dark (escalated threat, mini-boss)
   - Tier 4 — The bottom (final encounter + exit)
 - **Content scope (v1):** 3–4 tiers + 1 boss as the vertical slice target.
+- **Siege encounters (prototype later):** roughly **one action-tower-defense siege per tier** as a climax beat (hold the lift / defend the forge / seal a fissure). Tunnels feed waves into the defended point; the procgen should be able to tag a room as a "siege arena" with 2–3 incoming tunnel mouths. See §2 for the mechanic. **Not part of the MVP** — design and balance the core ARPG loop first.
 
 ---
 
