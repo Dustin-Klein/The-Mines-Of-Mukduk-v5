@@ -7,7 +7,9 @@
 - **Elevator pitch:** Trapped at the bottom of the Mines of Mukduk with nothing, claw your way deeper, scavenge and forge your power, and fight your way out.
 - **Player count:** Singleplayer (co-op as a stretch goal)
 - **Run length:** A full run targets **several hours**, with **save & resume** so players can stop and continue later.
-- **Status:** Concept
+- **Status:** Concept — **two directions under consideration:**
+  - **Direction A (primary, this doc):** Action RPG dungeon-escape with optional siege encounters.
+  - **Direction B (alternate, see Appendix §10):** Straight tower defense with Mukduk vibes — lower scope, strong s&box fit.
 
 ---
 
@@ -170,3 +172,35 @@ Spawn naked in one room → fight one enemy → pick up first weapon → mine a 
 ## 9. Notes & Scratch
 - "Mukduk" — lean into the name? Is Mukduk a place, a god, a monster at the bottom?
 - Death-drops-loot mechanic pairs perfectly with the Souls-like run model — recovering your own corpse becomes a tense mini-objective.
+
+---
+
+## 10. Appendix — Direction B: Straight Tower Defense
+> Alternate concept kept alongside the ARPG (Direction A). Same world & name, different genre. **Decide between A and B after prototyping** — don't build both at once. Notably **lower scope and a stronger s&box fit** (leans on built-in placement, pathfinding, projectiles instead of expensive melee feel/animation/loot systems).
+
+### Pitch (B)
+A **greed-driven descent tower defense**: run a mining operation drilling deeper into the Mines of Mukduk. Each depth is a new map where you defend your drill/extractor from waves crawling out of the dark — then choose to bank your haul or push deeper for richer veins and nastier waves.
+
+### Core loop (B)
+Reach a depth tier → place/upgrade defenses with mined ore → survive escalating waves → **choose: extract (bank ore & leave) or drill deeper (more reward, more danger)** → final-depth boss wave (the Mukduk mystery).
+
+### How B maps the existing pillars
+- **Earned power → an impregnable gauntlet.** You start with nothing and build up a defensive network instead of personal gear.
+- **Descend to escape → descend to extract.** Greed vs. safety is the central decision. "Escape" becomes extracting the haul to the surface (optional reverse/convoy beat: defend ore carts traveling *up*).
+- **Scarcity → tower economy.** Mined ore is the currency; the thing you protect (the extractor) is also what pays for protection.
+
+### Mechanics (B)
+- **Tunnels = lanes** (mine geometry, no artificial grid).
+- **Mining = currency** for placing/upgrading defenses (spike walls, oil-fire braziers, salvaged turrets, traps).
+- **Greed/extract decision** between tiers — the signature hook that separates it from generic TD.
+- **Light/scarcity & escalating threat** carry over from Direction A.
+- **Forge → upgrade bench** for towers.
+- _(Optional hybrid: a single mobile "foreman" unit you control to plug leaks — nudges toward Dungeon Defenders, but adds scope. Keep pure-static for the cheapest build.)_
+
+### What carries over unchanged from A
+- **Procedural generation** (seed-based room-template assembly) — even better fit for TD's per-run variety.
+- **Several-hour saveable run** — works as a long descending campaign you resume.
+- **Depth tiers, the Mukduk bottom-of-the-mine mystery/boss.**
+
+### Scope note (B)
+Most achievable direction in s&box. Biggest new system to build is **enemy pathfinding + wave/spawn director + tower placement/targeting**; you drop the ARPG character controller, melee feel, loot/affix, and animation burden. **Open question:** pure-static TD vs. a controllable foreman (action-TD) — pure-static is cheapest.
